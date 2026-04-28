@@ -1,0 +1,175 @@
+/* Reset & base */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav ul li a:hover {
+  color: #3498db;
+}
+
+/* Main content */
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+section h2 {
+  font-size: 1.6rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  border-left: 4px solid #3498db;
+  padding-left: 0.75rem;
+}
+
+/* About */
+#about p {
+  font-size: 1.05rem;
+  max-width: 700px;
+}
+
+/* Project grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: #fff;
+  border: 1px solid #dde3ea;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.project-card h3 {
+  font-size: 1.15rem;
+  color: #2c3e50;
+}
+
+.project-card p {
+  flex: 1;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-family: inherit;
+  transition: background-color 0.2s;
+  align-self: flex-start;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+/* Contact form */
+form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #dde3ea;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #2c3e50;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #ccd3db;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  transition: border-color 0.2s;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+form .btn {
+  align-self: flex-start;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #2c3e50;
+  color: #bdc3c7;
+  font-size: 0.9rem;
+}
